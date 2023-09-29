@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-=begin
+
 # Program Listing 
 # THIS PROGRAM PITS TWO DESTROYERS AGAINST EACH OTHER 3D 
 # ONE VESSEL IS UNDER YOUR COMMAND  THE OTHER IS UNDER COMPUTER  CONTROL SO
@@ -9,6 +9,8 @@
 D = 1000 + INT-CRND-CO * 5000 
 # ESTABLISH NUMBER OF SHOTS AVAILABLE 
 # TO THE ENEMY
+=begin
+
 S = INT(CRND(CO)) * 25 + 20 ISO 
 # ESTABLISH NUMBER OF SHOTS AVAILABLE TO YOUR VESSEL
 SI = INT(CRND(CO)) * 2S + 20 
@@ -210,3 +212,7 @@ print("This is the game of sink the bismark.")
     LOCKER" 5A50 GOTO 570 EflbD 
 =end
 
+require 'game'
+
+g = new game()
+g.loop()
