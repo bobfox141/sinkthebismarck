@@ -21,5 +21,16 @@ class game
     return
   end
 
+  def shoot()
+  end
 
-end
+  def move()
+  end
+
+  def loop()
+    introduction()
+
+    while (!done) 
+      
+    end
+  end
