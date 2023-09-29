@@ -209,16 +209,4 @@ print("This is the game of sink the bismark.")
     PROBABLY" 2140 print(" "TO JOIN DAVY JONES 
     LOCKER" 5A50 GOTO 570 EflbD 
 =end
-  
-class Utility
-  # distance at start
-  def distance_at_start()
-    return d = 1000 + rand(0) * 2000
-  end
-  
-  def shells_at_start()
-    return 
-  end
 
-  
-end
