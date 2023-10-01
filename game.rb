@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 # file: game.rb
-class game
+class Game()
   def introduction(d,pS,eS)
     print("\tThis is the Game of Sink the Bismarck.")
     print("A game of naval combat, both you and the computer have shells, some number greater than 20, in your")
@@ -11,7 +11,7 @@ class game
     print("The number of shells available changes every engagement. Currently")
     print("the number of rounds is: ", pS)
     print("Shells are less effective at larger distances. The present distance is now: ", d)
-    print("
+    print("")
     return
   end
 
@@ -24,34 +24,39 @@ class game
     return
   end
 
-  def shoot()
+
+  def shootF()
+
+
   end
 
-  def move()
+  def moveF()
   end
 
-  def command() 
-    ret = "blank"
+  def command()
+
+    done = false
+    while (!done)
     puts("Enter your command, to move or shoot [M/S]: ")
     mors = gets()
     mors = mors.upcase()
     if MORS[0] == 'M' then 
-      ret = "move"
+      moveF()
     elsif  MORS[0] == 'S' then
-      ret = "shoot"
+      shootF()
     else 
       print("Not acceptable")
-      
-      
-      
-      
     end
+    if move then
+      puts("")
+    end
+
   end
 
   def loop()
     introduction()
 
     while (!done) 
-      
+
     end
   end
