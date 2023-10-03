@@ -101,7 +101,7 @@ Program Listing
 510 PRINT "HOW FAR {-} = TOWARDS, {+} AWAY" 
 520 INPUT Dl 
 530 IF D1/ABS(D1) = 1 THEN 560 REM This should be > 0 but whatever 
-540 D = D - ABS-CD1} 
+540 D = D - ABS(D) 
 550 GOTO 570 
 560 D = D + Dl 
 570 REM GET ENEMY SHOT 
