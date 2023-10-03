@@ -25,8 +25,13 @@ class Messages()
     print("")
     print("")
   end
-  
-  def Enemy_down_2800()
+    def template_linenum()
+    print("")
+    print("")
+    print("")
+    print("")
+  end
+  def Enemy_GoingDown_2800()
     print("She can't take much more, ")
     print("Commander, it looks like the ")
     print("enemy is going down, probably to")
@@ -40,7 +45,7 @@ class Messages()
     print("and we'll put her on the bottom!")
   end
   
-  def Enemy_Lost_Engines_2680()
+  def Enemy_LostEngines_2680()
     print("Commander, the enemy has lost ")
     print("main engines. She is putting on ")
     print("thrusters. She'll founder if we keep")
@@ -53,7 +58,13 @@ class Messages()
     print("control for now. The are still taking")
     print("on water.")
   end
-
+  
+  def Enemy_FiresUnderControl_2580()
+    print() 
+    print( "THE OTHER SHIP SEEMS TO HAVE SOME")
+    print("FIRES NOW-, BUT THEY SEEM TO BE" )
+    print("UNDER CONTROL." )
+  end
   def Enemy_TakingOnWater_2540()
     print("The enemy has no serious damage")
     print("but she sure is taking on water.")
@@ -73,7 +84,7 @@ class Messages()
     print("life boats, Commander") 
   end
 
-  def Enemy_ShipFires_2390()
+  def Enemy_LosingGround_2390()
     print("")
     print("The enemy ship is losing ground...")
     print("already there are small fires.")
@@ -93,14 +104,18 @@ class Messages()
     print("some smoke.")
   end
   
-  def Enemy_Destroyed_2240()
+  def Enemy_Destroyed_2230()
     print("")
     print("You have destroyed the enemy vessel...")
     print("")
-    print("Since you are so good at this, why don't you try")
-    print("again? Type 1 to Continue and 0 to stop.")
+   
   end
 
+  def tryAgain()
+     print("Since you are so good at this, why don't you try")
+     puts("again? Type 1 to Continue and 0 to stop.")
+  end
+    
   def General_TryHarder_2010()
      print("")
     print("Try harder this time, Commander.")
@@ -171,7 +186,8 @@ class Messages()
   def Me_BadlyDamaged_1250()
     print("")
     print("Your ship is badly damaged. There is ")
-    print("little hope, Commander. ")
+    print("little hope, Commander. You have no mobility and are")
+    print("pretty much a sitting duck.")
   end
 
   def Me_Burning_1200()
@@ -244,5 +260,18 @@ class Messages()
     print("")
     puts("%s", mess)
   end
+
+  def enemyMiss()
+    print("")
+    print("The enemy shot missed. You are carrying no damage.")
+  end
+
+  def playerMiss()
+    print("")
+    print("You missed. You are did no damage. Try harder")
+  end
+
+
+
   
 end # class Messages
